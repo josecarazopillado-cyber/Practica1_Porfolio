@@ -12,15 +12,112 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <!-- RESPONSIVE -->
     <meta name="viewport" content="width=device=width, initial-scale=1">
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
-        <div>
-            <p>DISEÑADOR GRÁFICO</p>
-            <h1>JOSÉ CARAZO</h1>
-        </div>
+        <a href="#">JOSÉ CARAZO</a>
+        <nav id="menu">
+            <ul class="menu-desktop">
+                <li>
+                    <a href="#sobre-mi">SOBRE MI</a>
+                </li>
+                <li>
+                    <a href="#trabajos">TRABAJOS</a>
+                </li>
+                <li>
+                    <a href="contacto">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+        <input class="side-menu" type="checkbox" id="sideMenu">
+        <label class="icons-mobile" for="sideMenu">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+        <nav id="movil">
+            <ul class="menu-movil">
+                <li>
+                    <a href="#sobre-mi">SOBRE MI</a>
+                </li>
+                <li>
+                    <a href="#trabajos">TRABAJOS</a>
+                </li>
+                <li>
+                    <a href="contacto">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+
+    <div id="titulo">
+        <p>DISEÑADOR GRÁFICO</p>
+        <h1>JOSÉ CARAZO</h1>
+        <a href="#trabajos">VER TRABAJOS</a>
+    </div>
+
+    <section id="sobre-mi">
+        <h2>Sobre Mi</h2>
+        <div>
+            <div>
+                <figure></figure>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam officia temporibus, explicabo non soluta commodi! Quam quod deserunt numquam nisi, sed tempore laboriosam repellat voluptates fugit, reprehenderit ad modi!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="trabajos">
+        <h2>Trabajos</h2>
+        <div class="galeria">
+            <figure>
+                <img src="media/img/portfolio1.webp" alt="">
+                <figcaption>3D Lata GloGang</figcaption>
+            </figure>
+            <figure>
+                <img src="media/img/portfolio2.webp" alt="">
+                <figcaption>3D SSL 2+</figcaption>
+            </figure>
+            <figure>
+                <img src="media/img/portfolio4.webp" alt="">
+                <figcaption>Cartel Balada Triste de Trompeta</figcaption>
+            </figure>
+            <figure>
+                <img src="media/img/portfolio3.webp" alt="">
+                <figcaption>Colección Libros Stephen King</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <div>
+            <div>
+                <ul class="info">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+34 609 01 03 04</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>josecarazopillado@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Lunes a Viernes de 10:00 a 18:00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="rs-icons">
+                <i class="fa-brands fa-square-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-behance"></i>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>

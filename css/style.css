@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', 'Bebas Neue' , sans-serif;
+    scroll-behavior: smooth;
+    color: #EDE8DE;
+}
+
+body {
+    background-color: #141210;
+}
+
+/* COLORES:
+negro: #141210
+beige: #EDE8DE
+rojo: #C41E1E
+gris: #2A2724
+*/
