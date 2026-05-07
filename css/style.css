@@ -97,7 +97,7 @@ header a {
 }
 
 #titulo {
-    padding: 1.25rem;
+    padding: 1.25rem 4rem;
     background-color: var(--bg-color);
     height: calc(100vh - 58px);
     display: flex;
@@ -105,12 +105,12 @@ header a {
     justify-content: center;
 }
 
-#titulo > p {
+#titulo p {
     font-size: 1.75rem;
     font-family: var(--font-text);
 }
 
-#titulo > h1 {
+#titulo h1 {
     font-size: 9rem;
     font-family: var(--font-title);
     letter-spacing: 0.025em;
@@ -217,6 +217,7 @@ img {
     text-transform: uppercase;
     color: var(--red-color);
     margin-bottom: 1.75rem;
+    margin-left: 2.5rem;
 }
 
 #contacto > div {
@@ -254,12 +255,26 @@ img {
     align-items: center;
 }
 
+.rs-icons:hover {
+    cursor: pointer;
+}
+
 .rs-icons i {
     font-size: 2rem;
     color: var(--gray-color);
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width:940px){
+    .galeria {
+        flex-direction: column;
+    }
+
+    .galeria > figure {
+        flex: 100%;
+    }
+}
+
 @media screen and (max-width: 720px){
 
     #menu {
@@ -272,5 +287,37 @@ img {
 
     #movil {
         display: block;
+    }
+
+    #titulo h1 {
+        font-size: 7rem;
+    }
+
+    #titulo a {
+        font-size: 1.5rem;
+    }
+
+    section {
+        margin-top: 0;
+        min-height: 70vh;
+    }
+
+    #sobre-mi > h2 {
+        font-size: 6rem;
+        padding-bottom: 1.5rem !important; 
+        padding: 0;
+    }
+
+    #sobre-mi h3 {
+        font-size: 2.5rem;
+    }
+
+    #sobre-mi p {
+        font-size: 1.25rem;
+    }
+
+    .texto {
+        max-width: 700px;
+        margin: 0 auto;
     }
 }
